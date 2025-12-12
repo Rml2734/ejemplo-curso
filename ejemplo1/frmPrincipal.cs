@@ -14,6 +14,7 @@ namespace ejemplo1
     {
         public frmPrincipal()
         {
+            //le agrego un comentario al archivo
             InitializeComponent();
         }
 
@@ -26,7 +27,7 @@ namespace ejemplo1
                     MessageBox.Show("Ya existe una ventana abierta, termine de trabajar ahi...!!!");
                     return;
                 }
-                    
+
             }
             Form1 ventana = new Form1();
             ventana.MdiParent = this;
@@ -37,6 +38,11 @@ namespace ejemplo1
         {
             Form1 ventana = new Form1();
             ventana.ShowDialog();
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

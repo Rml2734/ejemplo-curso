@@ -180,6 +180,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmPrincipal";
             WindowState = FormWindowState.Maximized;
+            Load += frmPrincipal_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             toolStrip1.ResumeLayout(false);
